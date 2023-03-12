@@ -3,7 +3,7 @@ import "./style.scss";
 
 export default function App() {
   const showMore = (e) => {
-    e.target.parentElement.style.overflow = "scroll";
+    e.target.parentElement.style.overflowY = "scroll";
     e.target.parentElement.childNodes.forEach((x) =>
       x.classList.remove("d-none")
     );
@@ -1128,82 +1128,80 @@ export default function App() {
                 </h2>
                 {link.list &&
                   link.list.map((li, i) => (
-                    <div key={`nestedli-${index}-${i}`}>
-                      <li className={i > "4" ? "d-none" : ""}>
-                        {li.title && (
-                          <>
-                            <a target="_blank" rel="noreferrer" href={li.link}>
-                              {li.title}
-                            </a>
-                            {li.list &&
-                              li.list.map((l, ii) => (
-                                <span className="item" key={`nested${i}_${ii}`}>
-                                  <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href={l.link}
-                                  >
-                                    {l.title}
-                                  </a>
-                                </span>
-                              ))}
-                          </>
-                          //   }
-                        )}
-                        {li.modalTitle && (
-                          <>
-                            <button
-                              type="button"
-                              className="btn"
-                              data-toggle="modal"
-                              data-target={`#${li.id}`}
-                            >
-                              {" "}
-                              {li.modalTitle}{" "}
-                            </button>
-                            <div
-                              className="modal fade"
-                              id={li.id}
-                              tabIndex={-1}
-                              aria-labelledby="vs"
-                              aria-hidden="true"
-                            >
-                              <div className="modal-dialog modal-dialog-centered">
-                                <div className="modal-content">
-                                  <div
-                                    className="modal-body"
-                                    dangerouslySetInnerHTML={{
-                                      __html: li.modalBody
-                                    }}
-                                  ></div>
-                                </div>
-                              </div>
-                            </div>
-                          </>
-                        )}
-                      </li>
-                      {i === link.list.length - 1 && i > 5 && (
+                    <li key={`nestedli-${index}-${i}`} className={i > "4" ? "d-none" : ""}>
+                      {li.title && (
+                        <>
+                          <a target="_blank" rel="noreferrer" href={li.link}>
+                            {li.title}
+                          </a>
+                          {li.list &&
+                            li.list.map((l, ii) => (
+                              <span className="item" key={`nested${i}_${ii}`}>
+                                <a
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  href={l.link}
+                                >
+                                  {l.title}
+                                </a>
+                              </span>
+                            ))}
+                        </>
+                        //   }
+                      )}
+                      {li.modalTitle && (
                         <>
                           <button
-                            className="more"
-                            onClick={(event) => {
-                              showMore(event);
-                            }}
+                            type="button"
+                            className="btn"
+                            data-toggle="modal"
+                            data-target={`#${li.id}`}
                           >
-                            show more
+                            {" "}
+                            {li.modalTitle}{" "}
                           </button>
-                          <button
-                            className="less d-none"
-                            onClick={(event) => {
-                              showLess(event);
-                            }}
+                          <div
+                            className="modal fade"
+                            id={li.id}
+                            tabIndex={-1}
+                            aria-labelledby="vs"
+                            aria-hidden="true"
                           >
-                            show less
-                          </button>
+                            <div className="modal-dialog modal-dialog-centered">
+                              <div className="modal-content">
+                                <div
+                                  className="modal-body"
+                                  dangerouslySetInnerHTML={{
+                                    __html: li.modalBody
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
                         </>
                       )}
-                    </div>
+                    </li>
                   ))}
+                {link.list.length - 1 > 5 && (
+                  <>
+                    <button
+                      className="more"
+                      onClick={(event) => {
+                        showMore(event);
+                      }}
+                    >
+                      show more
+                    </button>
+                    <button
+                      className="less d-none"
+                      onClick={(event) => {
+                        showLess(event);
+                      }}
+                    >
+                      show less
+                    </button>
+                  </>
+                )}
               </ul>
             </div>
           ))}
