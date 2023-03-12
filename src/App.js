@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.min.css";
+import "./style.scss";
 
 export default function App() {
   const showMore = (e) => {

@@ -1,85 +1,59 @@
-$chooseColor : random(8);
-$color:rgb(random(100) ,random(100), random(100));
-@if $chooseColor == 1 {
-  // $color:#212121;
-}  @else if $chooseColor == 2{
-  // $color:#4E342E;
-}
-@else if $chooseColor == 3{
-  // $color:#880E4F;
-}
-@else if $chooseColor == 4{
-  // $color:#1A237E;
-}
-@else if $chooseColor == 5{
-// $color:#4A148C;
-}
-@else if $chooseColor == 6{
-// $color:#004D40;
-}
-@else if $chooseColor == 7{
-// $color:#0091EA;
-} @else{
-// $color:#00C853;
+$chooseColor: random(8);
+$color: rgb(random(100), random(100), random(100));
 
-}
-
-
-$text:#333;
-body{
+$text: #333;
+body {
   background-color: rgba($color, 0.2);
-  color:$text;
-  box-sizing:border-box;
+  color: $text;
+  box-sizing: border-box;
   content: $chooseColor;
-  
 }
-.content{
+.content {
   text-transform: capitalize;
-  li{
-    text-transform:initial;
+  li {
+    text-transform: initial;
   }
-  h1{
+  h1 {
     text-align: center;
-    margin:2rem;
+    margin: 2rem;
   }
-          // @else if $chooseColor == 5{
+  // @else if $chooseColor == 5{
 }
-.group{
-  
-  ul{
-  list-style:none;
-  background-color: #fff;
-  padding: 1rem 1rem 2rem;
-  border-radius:10px;
-  margin: 0.5rem;
-  overflow: hidden;
-    @media(min-width:768px){
+.group {
+  ul {
+    list-style: none;
+    background-color: #fff;
+    padding: 1rem 1rem 2rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    overflow: hidden;
+    @media (min-width: 768px) {
       height: 20rem;
     }
   }
-  h2{
+  h2 {
     margin: 1rem;
     text-align: center;
-    color:$color;
+    color: $color;
   }
-  li{
-    background-color: rgba($color , 0.05);
+  li {
+    background-color: rgba($color, 0.05);
     margin-bottom: 0.2rem;
     padding: 0.2rem 0.5rem;
     overflow: hidden;
-    .item{
+    .item {
       color: #fff;
       background-color: $color;
       margin: 0.1rem;
       padding: 0px 0.3rem;
       border-radius: 1rem;
       float: right;
-      a:hover{
-        color:#fff;
+      a:hover {
+        color: #fff;
       }
     }
   }
-  button{
+  button {
     width: 100%;
     margin: 1rem auto;
     border-radius: 5px;
@@ -88,41 +62,38 @@ body{
     padding: 0.3rem;
     border: 1px solid $color;
 
-    &.more{
+    &.more {
       background-color: $color;
       color: white;
     }
-    &.less{
-      background-color:white ;
+    &.less {
+      background-color: white;
       color: $color;
     }
-    
   }
 }
-a{
-  color:inherit;
+a {
+  color: inherit;
   text-decoration: capitalize;
   text-decoration: none;
-  &:hover{
+  &:hover {
     text-decoration: none;
-    
   }
-  
 }
-.fw-bold{
+.fw-bold {
   font-weight: bold;
 }
-span.tag{
+span.tag {
   color: #fff;
   background-color: $color;
   margin: 0.1rem;
   padding: 0px 0.3rem;
   border-radius: 1rem;
   float: right;
-  a:hover{
-    color:#fff;
+  a:hover {
+    color: #fff;
   }
 }
-.text-underline{
+.text-underline {
   text-decoration: underline;
 }
