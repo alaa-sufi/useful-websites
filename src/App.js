@@ -1047,7 +1047,7 @@ export default function App() {
       icon: "fab fa-php",
       list: [
         {
-          modalTitle: "VS commend",
+          modalTitle: "steps for open laravel project",
           id: "vs-php",
           modalBody: `<h5>from folder</h5>
           <ul style="height:initial" class="mb-3">
