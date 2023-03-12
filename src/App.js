@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
     // //scroll top
     // $(this).parent(".group").scrollTop($(this).offset().top);
   };
-  const [links, setLinks] = useState([
+  const links = [
     {
       title: "tailwindcss",
       icon: "fas fa-wind",
@@ -1113,7 +1113,7 @@ export default function App() {
         { title: "head meta", link: "https://www.heymeta.com" }
       ]
     }
-  ]);
+  ];
 
   return (
     <div className="content">
@@ -1121,15 +1121,15 @@ export default function App() {
       <div className="container">
         <div className="row">
           {links.map((link, index) => (
-            <div className="col-lg-4 col-md-6 group" key={index}>
+            <div className="col-lg-4 col-md-6 group" key={`levelone_${index}`}>
               <ul>
                 <h2>
                   {link.title} <i className={link.icon}></i>
                 </h2>
                 {link.list &&
                   link.list.map((li, i) => (
-                    <>
-                      <li key={i} className={i > "4" && "d-none"}>
+                    <div key={`nestedli-${index}-${i}`}>
+                      <li className={i > "4" ? "d-none" : ""}>
                         {li.title && (
                           <>
                             <a target="_blank" rel="noreferrer" href={li.link}>
@@ -1137,7 +1137,7 @@ export default function App() {
                             </a>
                             {li.list &&
                               li.list.map((l, ii) => (
-                                <span className="item" key={ii}>
+                                <span className="item" key={`nested${i}_${ii}`}>
                                   <a
                                     target="_blank"
                                     rel="noreferrer"
@@ -1182,7 +1182,7 @@ export default function App() {
                           </>
                         )}
                       </li>
-                      {i == link.list.length - 1 && i > 5 && (
+                      {i === link.list.length - 1 && i > 5 && (
                         <>
                           <button
                             className="more"
@@ -1202,22 +1202,22 @@ export default function App() {
                           </button>
                         </>
                       )}
-                    </>
+                    </div>
                   ))}
               </ul>
             </div>
           ))}
         </div>
       </div>
-      <footer class="text-center py-2">
+      <footer className="text-center py-2">
         <div className="container">
           <div>
-            Made With <i class="fas fa-heart text-danger"></i> By{" "}
+            Made With <i className="fas fa-heart text-danger"></i> By{" "}
             <a
               href="https://alaa-sufi-portfolio.netlify.app/"
               target="_blank"
               rel="noreferrer"
-              class="text-underline"
+              className="text-underline"
             >
               Alaa Sufi
             </a>{" "}
