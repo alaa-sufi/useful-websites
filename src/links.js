@@ -2,6 +2,7 @@ export const links = [
     {
         title: "tailwindcss",
         icon: "fas fa-wind",
+        id: '1',
         list: [
             { title: "playground", link: "https://play.tailwindcss.com/" },
             { title: "classes", link: "https://tailwind.build/classes" },
@@ -62,6 +63,7 @@ export const links = [
     {
         title: "angular",
         icon: "fab fa-angular",
+        id: "2",
         list: [
             { title: "translate", link: "http://www.ngx-translate.com/" },
             {
@@ -168,6 +170,7 @@ export const links = [
     // {
     //   title: "file",
     //   icon: "fa fa-file",
+    //  id:'3',
     //   list: [
     //     { title: "upload img", link: "https://alaa-sufi.imgbb.com/" },
     //     { title: "upload file", link: "https://gofile.io/" }
@@ -176,6 +179,7 @@ export const links = [
     {
         title: "choose",
         icon: "fas fa-hand-pointer",
+        id: '4',
         list: [
             { title: "hamburgers", link: "https://jonsuh.com/hamburgers/" },
             {
@@ -214,6 +218,7 @@ export const links = [
     {
         title: "react",
         icon: "fab fa-react",
+        id: '5',
         list: [
             { title: "example", link: "https://reactjsexample.com" },
             { title: "made with react", link: "https://madewithreactjs.com/" },
@@ -465,6 +470,7 @@ export const links = [
     {
         title: "react native",
         icon: "fab fa-react",
+        id: '6',
         list: [
             { title: "example", link: "https://reactnativeexample.com/" },
             {
@@ -548,6 +554,7 @@ export const links = [
     {
         title: "Next",
         icon: "fab fa-node-js",
+        id: '7',
         list: [
             {
                 title: "add google analytics",
@@ -586,6 +593,7 @@ export const links = [
     {
         title: "vue",
         icon: "fab fa-vuejs",
+        id: '8',
         list: [
             { title: "Example", link: "https://vuejsexamples.com/" },
             {
@@ -607,6 +615,7 @@ export const links = [
     {
         title: "open project ",
         icon: "fas fa-laptop-code",
+        id: '9',
         list: [
             {
                 modalTitle: "open github in codesandbox",
@@ -649,6 +658,7 @@ export const links = [
     {
         title: "css",
         icon: "fab fa-css3-alt",
+        id: '10',
         list: [
             {
                 title: "generate",
@@ -702,6 +712,7 @@ export const links = [
     {
         title: "template",
         icon: "fab fa-bootstrap",
+        id: '12',
         list: [
             { title: "bnker", link: "https://bnker.netlify.app/" },
             {
@@ -744,6 +755,7 @@ export const links = [
     {
         title: "classes",
         icon: "fa fa-question-circle",
+        id: '13',
         list: [
             {
                 title: "fontawesome",
@@ -784,6 +796,7 @@ export const links = [
     {
         title: "svg",
         icon: "fas fa-shapes",
+        id: '14',
         list: [
             { title: "png to svg", link: "https://www.pngtosvg.com/" },
             {
@@ -806,6 +819,7 @@ export const links = [
     {
         title: "icons",
         icon: "fas fa-icons",
+        id: '15',
         list: [
             { title: "EPS AI", link: "https://www.graphberry.com/category/icons" },
             { title: "SVG PNG", link: "https://www.graphberry.com/category/icons" },
@@ -826,6 +840,7 @@ export const links = [
     {
         title: "last",
         icon: "fas fa-walking",
+        id: '16',
         list: [
             { title: "favicon", link: "https://realfavicongenerator.net/" },
             { title: "image compressor", link: "https://imagecompressor.com/" },
@@ -875,6 +890,7 @@ export const links = [
     {
         title: "mockup",
         icon: "fas fa-laptop",
+        id: '17',
         list: [
             {
                 title: "from link",
@@ -896,6 +912,7 @@ export const links = [
     {
         title: "img",
         icon: "fas fa-file-image",
+        id: '18',
         list: [
             {
                 title: "edit",
@@ -911,6 +928,7 @@ export const links = [
     {
         title: "library",
         icon: "fas fa-file-import",
+        id: '19',
         list: [
             {
                 title: " flickity , groupCells :100%",
@@ -953,6 +971,7 @@ export const links = [
     {
         title: "colors",
         icon: "fa fa-palette",
+        id: '20',
         list: [
             { title: "palettes", link: "https://colorhunt.co" },
             {
@@ -978,6 +997,7 @@ export const links = [
     {
         title: "reference",
         icon: "fa fa-asterisk",
+        id: '21',
         list: [
             { title: "html", link: "https://htmlreference.io/" },
             { title: "css", link: "https://cssreference.io/" },
@@ -994,6 +1014,7 @@ export const links = [
     {
         title: "varios",
         icon: "fas fa-brain",
+        id: '22',
         list: [
             { title: "convert img2txt", link: "https://ocr.space/" },
             { title: "regexp", link: "https://ihateregex.io/" },
@@ -1019,11 +1040,13 @@ export const links = [
     {
         title: "theme",
         icon: "fab fa-wordpress",
+        id: '23',
         list: [{ title: "wocommerce hiteck", link: "" }]
     },
     {
         title: "php",
         icon: "fab fa-php",
+        id: '24',
         list: [
             {
                 modalTitle: "steps for open laravel project",
@@ -1056,6 +1079,7 @@ export const links = [
     {
         title: "learn",
         icon: "fas fa-graduation-cap",
+        id: '25',
         list: [
             { title: "daily css", link: "https://100dayscss.com/" },
             { title: "css battle", link: "https://cssbattle.dev/" },
@@ -1067,6 +1091,7 @@ export const links = [
     {
         title: "seo",
         icon: "fas fa-sitemap",
+        id: '26',
         list: [
             {
                 title: "seo component",

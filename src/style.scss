@@ -16,25 +16,45 @@ body {
     margin: 2rem;
   }
 }
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
 .group {
-  ul {
-    list-style: none;
-    background-color: #fff;
-    padding: 1rem 1rem 2rem;
-    border-radius: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    &.expanded ul {
+      height: 15rem;
     margin: 0.5rem;
-    overflow: hidden;
-    @media (min-width: 768px) {
-      height: 20rem;
+
+    }
+    &.collapsed ul {
+      // display: none;
     }
   }
   h2 {
-    margin: 1rem;
-    text-align: center;
-    color: $color;
+    padding: 1rem;
+    // filter:drop-shadow(0px 0px 0px red);
+    // text-align: center;
+    margin: 0;
+    color: white;
+    background-color: rgba($color, 0.5);
+    cursor: pointer;
     // & span > span:nth-of-type(n-2) {
     //   background: red;
     // }
+  }
+  ul {
+    list-style: none;
+    // padding: 1rem 1rem 2rem;
+    padding: 0;
+    height: 0;
+    transition: 0.3s height;
+    margin: 0;
   }
   li {
     background-color: rgba($color, 0.05);
@@ -101,7 +121,6 @@ span.tag {
 .search-form {
   width: 400px;
   max-width: 100%;
-  margin: auto;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -121,7 +140,7 @@ span.tag {
     border: 1px solid $color;
   }
 }
-.select-text{
-  background:rgba($color,0.8);
-  color:white;
+.select-text {
+  background: rgba($color, 0.8);
+  color: white;
 }
