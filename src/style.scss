@@ -1,4 +1,3 @@
-$chooseColor: random(8);
 $color: rgb(random(100), random(100), random(100));
 
 $text: #333;
@@ -6,7 +5,6 @@ body {
   background-color: rgba($color, 0.2);
   color: $text;
   box-sizing: border-box;
-  content: $chooseColor;
 }
 .content {
   text-transform: capitalize;
@@ -17,7 +15,6 @@ body {
     text-align: center;
     margin: 2rem;
   }
-  // @else if $chooseColor == 5{
 }
 .group {
   ul {
@@ -35,6 +32,9 @@ body {
     margin: 1rem;
     text-align: center;
     color: $color;
+    // & span > span:nth-of-type(n-2) {
+    //   background: red;
+    // }
   }
   li {
     background-color: rgba($color, 0.05);
@@ -96,4 +96,32 @@ span.tag {
 }
 .text-underline {
   text-decoration: underline;
+}
+
+.search-form {
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  .form-control:focus {
+    border-color: $color;
+    box-shadow: 0 0 0 0.2rem rgba($color, 25%);
+  }
+  .search-form-button {
+    background-color: $color;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: block;
+    text-transform: uppercase;
+    border: 1px solid $color;
+  }
+}
+.select-text{
+  background:rgba($color,0.8);
+  color:white;
 }
