@@ -64,6 +64,9 @@ body {
     grid-template-columns: 1fr;
   }
   @include sm {
+    grid-template-columns: 1fr;
+  }
+  @include md {
     grid-template-columns: 1fr 1fr;
   }
   @include xl {
@@ -80,7 +83,7 @@ body {
     @include xs {
       height: initial;
     }
-    @include md {
+    @include sm {
       height: 15rem;
     }
   }
@@ -308,4 +311,10 @@ a:hover {
   100% {
     opacity: 100%;
   }
+}
+.user-select-all {
+  user-select: all;
+}
+.cursor-pointer{
+  cursor: pointer;
 }

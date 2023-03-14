@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { links } from "./links"
 // import Shuffle from 'react-shuffle'
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function App() {
   const [filterLinks, setFilterLinks] = useState(links)
@@ -105,8 +106,8 @@ export default function App() {
       <a className="github-fork-ribbon" href="https://github.com/alaa-sufi/useful-websites" data-ribbon="Fork me on GitHub" title="Fork me on GitHub" target="_blank">Fork me on GitHub</a>
 
       <h1>Useful frontEnd Websites 🔗</h1>
-      <p className="text-center"> Click once to copy <i class="fas fa-clone"></i> and twice to open   <i class="fas fa-external-link-alt"></i> 
-</p>
+      <p className="text-center"> Click once to copy <i className="fas fa-clone"></i> and twice to open   <i className="fas fa-external-link-alt"></i>
+      </p>
       <div className='d-flex justify-content-center align-items-center mb-2 flex-md-row flex-column'>
         <div className=" search-form">
           <input type="text" className="form-control"
@@ -128,7 +129,7 @@ export default function App() {
           <div className="custom-toggle">
             <input type="checkbox" id="custom-toggle"
               checked={isCollapsedAll}
-              onInput={(e) => setIsCollapsedAll(!isCollapsedAll)}  />
+              onInput={(e) => setIsCollapsedAll(!isCollapsedAll)} />
             <label htmlFor="custom-toggle">
               <span className="text">
                 <span className="on">on</span>
@@ -172,13 +173,29 @@ export default function App() {
                       <li key={`nestedli-${index}-${i}`} className={i > "4" ? "d-none" : ""}>
                         {li.title && (
                           <>
-                            <a target="_blank" rel="noreferrer" href={li.link}>
-                              <span>{li.title?.split('').map((titleChar, k) => (
+                            <span target="_blank" rel="noreferrer" href={li.link} className='cursor-pointer' onDoubleClick={() => { window.open(li.link, '_blank') }} >
+                              {/* <span>{li.title?.split('').map((titleChar, k) => (
                                 <span key={`char-${index}-${i}-${k}`} className={filterSearch[k] === titleChar ? 'select-text' : ''}>{titleChar}</span>
                               ))}
-                              </span>
-                            </a>
-                            {li.list &&
+                              </span> */}
+                              <CopyToClipboard text={li.link} >
+                                <span
+                                  data-toggle="tooltip"
+                                  data-placement="top"
+                                  title="copy to clipboard"
+                                  id={`nestedli-${index}-${i}`}
+                                  trigger="click"
+                                  onClick={(e) => {
+                                    
+                                    e.target.setAttribute('data-original-title', 'copied !');
+                                    e.target.setAttribute('title', 'copied !')
+                                  }}
+                                >{li.title}
+                                </span>
+                              </CopyToClipboard>
+                            </span>
+                            {
+                              li.list &&
                               li.list.map((l, ii) => (
                                 <span className="item" key={`nested${i}_${ii}`}>
                                   <a
@@ -189,7 +206,8 @@ export default function App() {
                                     {l.title}
                                   </a>
                                 </span>
-                              ))}
+                              ))
+                            }
                           </>
                           //   }
                         )}
@@ -254,20 +272,13 @@ export default function App() {
           }
         </div>
         {filterLinks?.length === 0 && <p className='text-center h2 w-100'>no result <i className='fa fa-frown' /></p>}
-      </div>
-      {/* <button className={`scroll-top ${window.pageYOffset > 500 ? 'd-none' : ''}`} onClick={() => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      }}>
-        <i className="fa fa-angle-up"></i>
-      </button> */}
+      </div >
       {isVisible && (
         <button className={`scroll-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
           <i className="fa fa-angle-up"></i>
         </button>
-      )}
+      )
+      }
       <footer className="text-center py-2">
         <div className="container">
           <div>
@@ -292,7 +303,7 @@ export default function App() {
               rel="noreferrer"
               className="text-underline"
             >
-              Alaa Sufi
+                Alaa Sufi
             </a>{" "}
             ©<script>document.write(new Date().getFullYear())</script>2023.
           </div>
