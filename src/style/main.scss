@@ -1,0 +1,151 @@
+@import "./colors";
+@import "./functions";
+@import "./reset";
+@import "./animation";
+@import "./components";
+@import "./shared";
+
+body {
+  background-color: rgba($color, 0.2);
+  color: $text;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 5rem;
+  @include xs {
+    font-size: 2rem;
+  }
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  @include xs {
+    grid-template-columns: 1fr;
+  }
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include xl {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card-layout {
+  border-radius: 10px;
+ 
+  .card-heading {
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0;
+    color: white;
+    background-color: rgba($color, 0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-list {
+    list-style: none;
+    // padding: 1rem 1rem 2rem;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding: 0;
+    height: 0;
+    transition: 0.3s height;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+  }
+  .card-button {
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: block;
+    text-transform: uppercase;
+    padding: 0.3rem;
+    border: 1px solid $color;
+    &:focus {
+    border-color: $color;
+    box-shadow: 0 0 0 0.2rem rgba($color, 25%);
+  }
+    &.more {
+      background-color: $color;
+      color: white;
+    }
+    &.less {
+      background-color: white;
+      color: $color;
+    }
+    &.card-modal{
+      background-color: rgba($color, 0.3)
+    }
+  }
+   &.expanded .card-list {
+    margin: auto;
+    padding: 0.5rem;
+    overflow-y: auto;
+
+    @include xs {
+      height: initial;
+    }
+    @include sm {
+      height: 15.5rem;
+    }
+  }
+}
+
+.item-layout {
+  background-color: rgba($color, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  
+  a {
+    padding: 0.2rem 0.5rem;
+  }
+  .item-layout_icons {
+    gap: 0.05rem;
+    align-items: center;
+    display: none;
+    @include xs {
+      display: flex;
+    }
+    a {
+      padding: 0;
+    }
+    i {
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 4px;
+      &:hover {
+        background-color: rgba($color, 0.2);
+      }
+    }
+  }
+  &:hover .item-layout_icons {
+    display: flex;
+  }
+}
+
+/*********
+ * OTHER *
+ *********/
+span.tag {
+  color: #fff;
+  background-color: $color;
+  margin: 0.1rem;
+  padding: 0px 0.3rem;
+  border-radius: 1rem;
+  float: right;
+}
+//

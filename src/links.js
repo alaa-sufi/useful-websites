@@ -31,19 +31,19 @@ export const links = [
                 modalTitle: "components",
                 id: "tailwind-component-links",
                 modalBody: `<ul style="height:initial">
-        <li><a class="d-block fw-bold" target="_blank" href="https://www.tailwind-kit.com/components">Tail Kit -- 250 components <span class="tag">html</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://mambaui.com/components">Mambaui -- 140 components <span class="tag">html</span><span class="tag">vue</span><span class="tag">jsx</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://www.gustui.com/docs/application/components/alerts">Gustui -- 50 components <span class="tag">html</span><span class="tag">react</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://kimia-ui.vercel.app/components/accordion">kimia-ui -- simple <span class="tag">react</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://merakiui.com/components/">merakiui -- beautiful<span class="tag">html</span><span class="tag">rtl/ltr</span><span class="tag">dark</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://kitwind.io/products/kometa/components">kitwind -- 130 sections <span class="tag">html</span><span class="tag">vue/ltr</span><span class="tag">react</span></a></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://www.tailwind-kit.com/components">Tail Kit -- 250 components </a><span class="tag">html</span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://mambaui.com/components">Mambaui -- 140 components </a><span><span class="tag">html</span><span class="tag">vue</span><span class="tag">jsx</span><span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://www.gustui.com/docs/application/components/alerts">Gustui -- 50 components </a><span><span class="tag">html</span><span class="tag">react</span></span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://kimia-ui.vercel.app/components/accordion">kimia-ui -- simple </a><span class="tag">react</span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://merakiui.com/components/">merakiui -- beautiful</a><span><span class="tag">html</span><span class="tag">rtl/ltr</span><span class="tag">dark</span></span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://kitwind.io/products/kometa/components">kitwind -- 130 sections </a><span><span class="tag">html</span><span class="tag">vue/ltr</span><span class="tag">react</span></span></li>
         <hr/>
         <h6 class="fw-bold">Other library based</h6>
         <li><a class="d-block fw-bold" target="_blank" href="https://tailwind-elements.com/">Bootstrap components </a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://flowbite.com/">components in tailwind  <span class="tag">react</span></a><span class="tag">vue</span></a></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://merakiui.com/components/">Material Tailwind -- beautiful and big<span class="tag">react</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://www.vue-tailwind.com/">vue-tailwind -- <span class="tag">vue</span></a></li>
-        <li><a class="d-block fw-bold" target="_blank" href="https://daisyui.com/components/button/">daisyui -- <span class="tag">html</span></a></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://flowbite.com/">components in tailwind  </a><span><span class="tag">react</span><span class="tag">vue</span></span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://merakiui.com/components/">Material Tailwind -- beautiful and big</a><span class="tag">react</span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://www.vue-tailwind.com/">vue-tailwind -- </a><span class="tag">vue</span></li>
+        <li><a class="d-block fw-bold" target="_blank" href="https://daisyui.com/components/button/">daisyui -- </a><span class="tag">html</span></li>
       </ul>`
             },
             {
@@ -569,10 +569,10 @@ export const links = [
                 modalTitle: "auth",
                 id: "next-auth",
                 modalBody: `<ul style="height:initial">
-          <h6><a href="https://www.youtube.com/watch?v=Urgstu-mCec" target="_blank">youtube link</a></h6>
-          <h6><a href="https://github.com/themsaid/ergodnc-nextjs" target="_blank">simple project</a></h6>
-          <h6><a href="https://github.com/taylorotwell/next-example-frontend" target="_blank">complete project</a></h6>
-          <h6><a href="https://codesandbox.io/s/auth-simple-project-with-localstorage-934sd4" target="_blank">with localStorage</a></h6>
+          <li><a href="https://www.youtube.com/watch?v=Urgstu-mCec" target="_blank">youtube link</a></li>
+          <li><a href="https://github.com/themsaid/ergodnc-nextjs" target="_blank">simple project</a></li>
+          <li><a href="https://github.com/taylorotwell/next-example-frontend" target="_blank">complete project</a></li>
+          <li><a href="https://codesandbox.io/s/auth-simple-project-with-localstorage-934sd4" target="_blank">with localStorage</a></li>
      
       </ul>`
             },
@@ -625,7 +625,7 @@ export const links = [
      <strong>form : </strong> https://github.com/etc.
         </li>
         <li>
-          <strong>to : </strong>  https://github<span class="text-danger">box</span>.com/etc
+          <strong>to : </strong> <span> https://github<span class="text-danger">box</span>.com/etc</span>
         </li>
       </ul>`
             },
@@ -637,7 +637,7 @@ export const links = [
           <strong>form : </strong> https://github.com/etc.
              </li>
              <li>
-               <strong>to : </strong>  https://<span class="text-danger">vscode.dev/</span>github.com/etc
+               <strong>to : </strong>  <span>https://<span class="text-danger">vscode.dev/</span>github.com/etc</span>
              </li>
           </ul>`
             },
@@ -649,7 +649,7 @@ export const links = [
           <strong>form : </strong> https://github.com/etc.
              </li>
              <li>
-               <strong>to : </strong>  https://<span class="text-danger">stackblitz.com/github</span>/etc
+               <strong>to : </strong> <span> https://<span class="text-danger">stackblitz.com/github</span>/etc</span>
              </li>
           </ul>`
             }

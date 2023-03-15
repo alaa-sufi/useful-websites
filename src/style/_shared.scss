@@ -1,0 +1,41 @@
+.button {
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: block;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid $color;
+    background-color: rgba($color, 0.9);
+    transition: 0.3s backgroundColor;
+    &:hover {
+        background-color: $color;
+    }
+    color: white;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.user-select-all {
+  user-select: all;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-text {
+  background: rgba($color, 0.8);
+  color: white;
+}
+
+.transform-rotate-90 {
+  transform: rotate(180deg);
+}
+.transition {
+  transition: 0.3s transform;
+}
+.text-underline {
+  text-decoration: underline;
+}

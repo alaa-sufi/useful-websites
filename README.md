@@ -1,23 +1,22 @@
 # # Useful FrontEnd Websites 🔗
 the site that provides a collection of website URLs helps frontend developer 💻
-you allways can help me to make my collection is bigger
+you always can help me to make my collection is bigger
 
 ##  Key Features✨
 	
  - Search Filter
  - Collapsed / Expanded  all
  - Section with sort
- - Easily copy url on click
- - Easily open url on click twice
+ - Easily copy / open url 
  - Random primary color for fun ;)
- - Navigation for makde access more easy
+ - Navigation for make access more easy
 
 
 ##  Contents 😁
 - libraries
 - tools
 - assets source (images , icons, svg , ...)
-- referrences
+- references
 - notes
 - and more
 

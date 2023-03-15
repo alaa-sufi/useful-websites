@@ -1,0 +1,61 @@
+/********************
+ * START RESET HTML *
+ ********************/
+a {
+  color: inherit;
+  text-decoration: capitalize;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $color;
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/******************
+ * END RESET HTML *
+ ******************/
+
+/*************************
+ * START RESET BOOTSTRAP *
+ *************************/
+//start dropdown
+.custom-dropdown.dropdown {
+  width: 100%;
+
+  .dropdown-toggle {
+    all: unset;
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    display: block;
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: 0.2rem;
+      transform: translateY(-50%);
+    }
+  }
+  .dropdown-menu {
+    width: 80%;
+    filter: drop-shadow(3px 3px 3px #aaa) brightness(0.9);
+  }
+}
+//end dropdown
+// start modal
+.modal-body {
+  padding: 2rem;
+  li {
+    @extend .item-layout;
+    padding: 0.2rem;
+  }
+  @include xs {
+    padding: 1.5rem;
+  }
+}
+// end modal
+/***********************
+ * END RESET BOOTSTRAP *
+ ***********************/
