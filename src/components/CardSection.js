@@ -28,7 +28,7 @@ export default function CardSection({ collapsedList, changeExpandedList, link })
                     {" "}
                     {link?.title}
                 </span>
-                <i className={`fa fa-angle-down transition ${collapsedList.includes(link.id) ? 'transform-rotate-90' : ''}`} ></i>
+                <i className={`fa fa-angle-up transition ${collapsedList.includes(link.id) ? 'transform-rotate-90' : ''}`} ></i>
             </h2>
             <ul className='card-list'>
                 {link?.list &&
