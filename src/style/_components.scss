@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0%;
+  border:none;
   &.visible {
     animation: 0.3s opacity both;
   }
