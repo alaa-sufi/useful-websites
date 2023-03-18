@@ -39,5 +39,5 @@ you always can help me to make my collection is bigger
 
 * Email: [alaasufi227@gmail.com](mailto:alaasufi227@gmail.com)
 
-*  Whatsapp: [https://wa.me/+963960990506](https://wa.me/+963960990506)
+*  Whatsapp: [00963960990506](https://wa.me/+963960990506)
 *  Telegram: [https://t.me/Alaa0sufi](https://t.me/Alaa0sufi)  
