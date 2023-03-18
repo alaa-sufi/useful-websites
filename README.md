@@ -37,7 +37,7 @@ you always can help me to make my collection is bigger
 
 ##  Contact me
 
-* Email: [alaasufi227@gmail.com](alaasufi227@gmail.com)
+* Email: [alaasufi227@gmail.com](mailto:alaasufi227@gmail.com)
 
-*  Whatsapp: [https://wa.me/00963960990506](https://wa.me/00963960990506)
+*  Whatsapp: [00963960990506](https://wa.me/+963960990506)
 *  Telegram: [https://t.me/Alaa0sufi](https://t.me/Alaa0sufi)  
