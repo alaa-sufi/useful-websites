@@ -921,6 +921,7 @@ export const links = [
                     { title: " canva", link: "https://www.canva.com/" }
                 ]
             },
+            { title: "PixelArtHive", link: "https://pixelarthive.com/" },
             { title: "fix Ai", link: "https://letsenhance.io/" },
             { title: "remove bg", link: "https://www.remove.bg/" }
         ]
